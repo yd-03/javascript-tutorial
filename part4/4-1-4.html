@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <script>
+      "use strict";
+
+      let menu = {
+        width: 200,
+        height: 300,
+        title: "My menu",
+      };
+
+      function multiplyNumeric(obj) {
+        for (let key in obj) {
+          if (typeof obj[key] == "number") {
+            obj[key] *= 2;
+          }
+        }
+      }
+
+      multiplyNumeric(menu);
+      alert(JSON.stringify(menu)); // オブジェクトや値をJSON文字列に変換
+    </script>
+  </body>
+</html>
